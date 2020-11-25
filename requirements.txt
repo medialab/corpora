@@ -1,2 +1,1 @@
-datapackage==1.15.1
-goodtables==2.5.2
+frictionless==3.34.2
