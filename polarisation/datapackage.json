@@ -13,6 +13,9 @@
       "name": "medias",
       "path": "medias.csv",
       "description": "A list of French medias that we study on the Internet.",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "encoding": "utf-8",
       "schema": {
         "primaryKey": "webentity_id",
         "fields": [
@@ -63,15 +66,15 @@
             "type": "integer"
           },
           {
-            "name": "indegree",
-            "title": "Indegree",
-            "description": "Indegree of the media's webentity in the original Hyphe corpus.",
-            "type": "integer"
-          },
-          {
             "name": "hyphe_creation_timestamp",
             "title": "Hyphe creation timestamp",
             "description": "Timestamp of the media's webentity creation in Hyphe.",
+            "type": "integer"
+          },
+          {
+            "name": "hyphe_last_modification_timestamp",
+            "title": "Hyphe last modification timestamp",
+            "description": "Timestamp of the media's webentity last modification in Hyphe.",
             "type": "integer"
           },
           {
@@ -91,7 +94,7 @@
             "name": "foundation_year",
             "title": "Foundation year",
             "description": "Year the media was founded.",
-            "type": "year"
+            "type": "string"
           },
           {
             "name": "batch",
@@ -110,7 +113,9 @@
                 "individu",
                 "plateforme",
                 "agrégateur",
-                "agence"
+                "agence",
+                "individu|media",
+                "media|plateforme"
               ]
             }
           },
