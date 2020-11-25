@@ -1,0 +1,145 @@
+{
+  "name": "polarisation",
+  "title": "Polarisation de l'Espace Public",
+  "profile": "tabular-data-package",
+  "version": "1.0.0",
+  "keywords": [
+    "media",
+    "france",
+    "polarisation"
+  ],
+  "resources": [
+    {
+      "name": "medias",
+      "path": "medias.csv",
+      "description": "A list of French medias that we study on the Internet.",
+      "schema": {
+        "primaryKey": "webentity_id",
+        "fields": [
+          {
+            "name": "webentity_id",
+            "title": "Webentity identifier",
+            "description": "Webentity ID for the media, as given by Hyphe in the original corpus.",
+            "type": "integer",
+            "constraints": {
+              "required": true,
+              "unique": true
+            }
+          },
+          {
+            "name": "name",
+            "title": "Name",
+            "description": "Media name.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "prefixes",
+            "title": "URL prefixes",
+            "description": "List of urls separated by a whitespace character and defining the limits of the media's webentity in Hyphe.",
+            "type": "string",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "home_page",
+            "title": "Home page",
+            "description": "The media's webentity home page as was defined in Hyphe.",
+            "type": "string"
+          },
+          {
+            "name": "start_pages",
+            "title": "Start pages",
+            "description": "List of urls separated by a whitespace character and that served as starting pages for the media's webentity crawl in Hyphe.",
+            "type": "string"
+          },
+          {
+            "name": "indegree",
+            "title": "Indegree",
+            "description": "Indegree of the media's webentity in the original Hyphe corpus.",
+            "type": "integer"
+          },
+          {
+            "name": "indegree",
+            "title": "Indegree",
+            "description": "Indegree of the media's webentity in the original Hyphe corpus.",
+            "type": "integer"
+          },
+          {
+            "name": "hyphe_creation_timestamp",
+            "title": "Hyphe creation timestamp",
+            "description": "Timestamp of the media's webentity creation in Hyphe.",
+            "type": "integer"
+          },
+          {
+            "name": "outreach",
+            "title": "Outreach",
+            "description": "The media's outreach, e.g. national, regional etc.",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "nationale",
+                "régionale",
+                "internationale"
+              ]
+            }
+          },
+          {
+            "name": "foundation_year",
+            "title": "Foundation year",
+            "description": "Year the media was founded.",
+            "type": "year"
+          },
+          {
+            "name": "batch",
+            "title": "Batch",
+            "description": "Batch number when the media was added to the corpus.",
+            "type": "integer"
+          },
+          {
+            "name": "edito",
+            "title": "Editorialization",
+            "description": "The media's editorialization.",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "media",
+                "individu",
+                "plateforme",
+                "agrégateur",
+                "agence"
+              ]
+            }
+          },
+          {
+            "name": "parody",
+            "title": "Parody",
+            "description": "Whether the media's contents are parodical.",
+            "type": "boolean"
+          },
+          {
+            "name": "origin",
+            "title": "Origin",
+            "description": "Media national origin.",
+            "type": "string"
+          },
+          {
+            "name": "digital_native",
+            "title": "Digital native",
+            "description": "Whether the media is digital native.",
+            "type": "boolean"
+          },
+          {
+            "name": "mediacloud_ids",
+            "title": "Mediacloud identifiers",
+            "description": "List of the media's ids on the Media cloud platform, separated by '|'.",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}
