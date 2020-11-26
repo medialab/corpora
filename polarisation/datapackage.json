@@ -49,7 +49,7 @@
           {
             "name": "prefixes",
             "title": "URL prefixes",
-            "description": "List of urls separated by a whitespace character and defining the limits of the media's webentity in Hyphe.",
+            "description": "List of urls separated by '|' and defining the limits of the media's webentity in Hyphe.",
             "type": "string",
             "constraints": {
               "required": true
@@ -64,7 +64,7 @@
           {
             "name": "start_pages",
             "title": "Start pages",
-            "description": "List of urls separated by a whitespace character and that served as starting pages for the media's webentity crawl in Hyphe.",
+            "description": "List of urls separated by '|' and that served as starting pages for the media's webentity crawl in Hyphe.",
             "type": "string"
           },
           {
