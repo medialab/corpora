@@ -19,6 +19,7 @@
   "resources": [
     {
       "name": "medias",
+      "title": "Medias",
       "path": "medias.csv",
       "description": "A list of French medias that we study on the Internet.",
       "profile": "tabular-data-resource",
