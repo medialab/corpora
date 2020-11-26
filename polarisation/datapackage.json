@@ -8,6 +8,14 @@
     "france",
     "polarisation"
   ],
+  "licenses": [
+    {
+      "url": "http://opendatacommons.org/licenses/odbl/",
+      "title": "Attribution and Share-Alike for Data/Databases",
+      "version": "1.0",
+      "name": "odc-odbl"
+    }
+  ],
   "resources": [
     {
       "name": "medias",
