@@ -102,7 +102,7 @@
             "name": "foundation_year",
             "title": "Foundation year",
             "description": "Year the media was founded.",
-            "type": "string"
+            "type": "year"
           },
           {
             "name": "batch",
