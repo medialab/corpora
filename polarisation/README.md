@@ -30,3 +30,5 @@ A list of French medias that we study on the Internet.
 * **origin** (*string*): Media national origin.
 * **digital_native** (*boolean*): Whether the media is digital native.
 * **mediacloud_ids** (*string*): List of the media's ids on the Media cloud platform, separated by '|'.
+* **wheel_category** (*string*): Media category as inferred by SBM hierarchical clustering.
+* **wheel_subcategory** (*string*): Media subcategory as inferred by SBM hierarchical clustering.

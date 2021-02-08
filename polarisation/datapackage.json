@@ -149,6 +149,41 @@
             "title": "Mediacloud identifiers",
             "description": "List of the media's ids on the Media cloud platform, separated by '|'.",
             "type": "string"
+          },
+          {
+            "name": "wheel_category",
+            "title": "Wheel category",
+            "description": "Media category as inferred by SBM hierarchical clustering.",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Opinion Journalism",
+                "Mainstream Media",
+                "Periphery",
+                "Counter-Informational Space"
+              ]
+            }
+          },
+          {
+            "name": "wheel_subcategory",
+            "title": "Wheel subcategory",
+            "description": "Media subcategory as inferred by SBM hierarchical clustering.",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Right Wing",
+                "Left Wing",
+                "Hyper-centre",
+                "Centre",
+                "PQR & Mag",
+                "Hyper-local (East)",
+                "IT & Consumer",
+                "Leisure and Health",
+                "Identitarian",
+                "Alternative Health",
+                "Revolutionary Right"
+              ]
+            }
           }
         ]
       }
