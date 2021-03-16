@@ -184,6 +184,14 @@
                 "Revolutionary Right"
               ]
             }
+          },
+          {
+            "name": "has_paywall",
+            "title": "Has paywall",
+            "description": "Whether the media has a paywall on its website.",
+            "type": "boolean",
+            "trueValues": ["true"],
+            "falseValues": ["false"]
           }
         ]
       }

@@ -7,3 +7,7 @@ A collection of public small-scale corpora used & maintained by [SciencesPo's m√
 ## Summary
 
 * [Corpus Polarisation de l'Espace Public](./polarisation/)
+
+## Useful links
+
+* https://specs.frictionlessdata.io/table-schema/
