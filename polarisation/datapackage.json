@@ -192,6 +192,14 @@
             "type": "boolean",
             "trueValues": ["true"],
             "falseValues": ["false"]
+          },
+          {
+            "name": "inactive",
+            "title": "Inactive",
+            "description": "Whether the media can now be considered as inactive.",
+            "type": "boolean",
+            "trueValues": ["true"],
+            "falseValues": ["false", ""]
           }
         ]
       }
